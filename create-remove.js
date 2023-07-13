@@ -56,7 +56,8 @@ const removeFirst = document.getElementById("remove-first");
 removeFirst.addEventListener("click", () => {
     /*-------------------- Select the first dog card --------------------- */
     // Your code here
-
+    const dogCard = document.querySelector('ul')
+    dogCard.children[0].remove()
     /*-------------------- Remove the first dog card --------------------- */
     // Your code here
 });
@@ -66,7 +67,8 @@ const removeLast = document.getElementById("remove-last");
 removeLast.addEventListener("click", () => {
     /*-------------------- Select the last dog card ----------------------- */
     // Your code here
-
+    const dogCard = document.querySelector('ul')
+    dogCard.lastChild.remove()
     /*-------------------- Remove the last dog card ----------------------- */
     // Your code here
 });
